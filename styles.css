@@ -129,3 +129,43 @@ body {
   background: #cccccc;
   cursor: not-allowed;
 }
+
+/* Order summary styles */
+.order-summary {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f8f8f8;
+  border-radius: 6px;
+  display: none;
+}
+
+.order-summary.visible {
+  display: block;
+}
+
+/* Animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.blending {
+  animation: spin 1s linear infinite;
+}
+
+/* Price display */
+.price-display {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Ingredient emoji styles */
+.ingredient-emoji {
+  margin-right: 5px;
+}
