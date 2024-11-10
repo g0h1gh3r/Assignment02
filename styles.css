@@ -11,3 +11,39 @@ body {
   padding: 20px;
   background-color: #f5f5f5;
 }
+
+/* Container styles */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styles */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Section styles */
+.section {
+  margin-bottom: 25px;
+}
+
+.section h2 {
+  margin-bottom: 15px;
+  color: #444;
+  font-size: 1.2rem;
+}
