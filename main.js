@@ -29,3 +29,34 @@ class Smoothie {
     }`
   }
 }
+
+// Color mapping for ingredients
+const ingredientColors = {
+  strawberry: '#ff9999',
+  banana: '#ffee99',
+  mango: '#ffcc66',
+  blueberry: '#9999ff',
+  pineapple: '#ffff99',
+  kiwi: '#99ff99',
+}
+
+// State management
+const state = {
+  size: 'medium',
+  base: 'yogurt',
+  ingredients: [],
+  addOns: [],
+  special: '',
+  isBlending: false,
+}
+
+// Helper functions
+function updatePreview() {
+  const preview = document.getElementById('smoothie-preview')
+  if (state.ingredients.length === 0) {
+    preview.style.background = '#f0f0f0'
+  } else {
+    const colors = state.ingredients.map((ing) => ingredientColors[ing])
+    preview.style.background = `linear-gradient(45deg, ${colors.join(', ')})`
+  }
+}
